@@ -177,14 +177,13 @@ Once your ruleset has been defined you can apply them to a class using the `.on`
   </source-code>
 </code-listing>
 
-There is no requirement to apply the rules directly to an object or class, you can capture the ruleset in a variable or property using `.rule` instead:
+There is no requirement to apply the rules directly to an object or class, you can capture the ruleset in a variable instead:
 
 <code-listing heading="Storing Rules in a Property">
   <source-code lang="ES 2015">
     const personRules = ValidationRules
       .ensure('firstName').required()
-      .ensure('lastName').required()
-      .rules;
+      .ensure('lastName').required();
   </source-code>
 </code-listing>
 
